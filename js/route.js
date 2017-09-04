@@ -38,7 +38,8 @@
 			var self = this;
 			//页面加载匹配路由
 			window.addEventListener('load',function(){
-				self.urlChange()
+				// self.urlChange()
+				location.hash = '/index'
 			})
 			//路由切换
 			window.addEventListener('hashchange',function(){
