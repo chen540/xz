@@ -1,5 +1,4 @@
 ﻿/*
-*author:https://github.com/kliuj
 **使用方法
 *		1：注册路由 : spaRouters.map('/name',function(transition){
 						//异步加载js
@@ -39,6 +38,7 @@
 			//页面加载匹配路由
 			window.addEventListener('load',function(){
 				// self.urlChange()
+				//复制粘贴的地址强制跳转到首页
 				location.hash = '/index'
 			})
 			//路由切换

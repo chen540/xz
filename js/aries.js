@@ -23,7 +23,7 @@
             </section>\
         </article>\
         <section class="but-box clearfix">\
-            <a class="but fl Aries-but-01-bg" href="#">去晒运势</a>\
+            <a class="but fl Aries-but-01-bg" id="share-btn" onclick="show()">去晒运势</a>\
             <a class="but fr Aries-but-02-bg" href="#index">换个星座</a>\
         </section>\
     </section>';

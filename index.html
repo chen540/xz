@@ -79,7 +79,9 @@
         </ul>
     </section>
 </section>
-    
+<div id="share">
+  <img class="share-img" src="images/share.png">
+</div>
 </body>
 <script type="text/javascript">
     spaRouters.map('/index', function(transition) {
@@ -121,17 +123,15 @@
     spaRouters.map('/pisces', function(transition) {
        spaRouters.asyncFun('js/pisces.js', transition)
     })
-    spaRouters.beforeEach(function(transition) {
-       console.log('切换之前dosomething')
-       setTimeout(function() {
-           //模拟切换之前延迟，比如说做个异步登录信息验证
-           transition.next()
-       }, 100)
-    })
-    spaRouters.afterEach(function(transition) {
-       console.log("切换之后dosomething")
-    })
-    spaRouters.init()
+    spaRouters.init();
+    function show(){
+      var share = document.getElementById('share');
+      share.style.display = 'block';
+    }
+    document.getElementById('share').onclick=function(){
+      var share = document.getElementById('share');
+      share.style.display = 'none';
+    }
 </script>
 
 </html>
