@@ -38,10 +38,6 @@
 			//页面加载匹配路由
 			window.addEventListener('load',function(){
 				// self.urlChange()
-<<<<<<< HEAD
-=======
-				//复制粘贴的地址强制跳转到首页
->>>>>>> abc
 				location.hash = '/index'
 			})
 			//路由切换
