@@ -1,7 +1,7 @@
  SPA_RESOLVE_INIT = function(transition) {
    var JSONP = document.createElement("script");
    JSONP.type = "text/javascript";
-   JSONP.src = "http://interface.sina.cn/ast/get_mail_fate.d.json?astro=Taurus&callback=Cbk";
+   JSONP.src = "http://interface.sina.cn/ast/get_mail_fate.d.json?astro=Aries&callback=Cbk";
    JSONP.id = "pageid"
    document.getElementsByTagName("head")[0].appendChild(JSONP);
  }

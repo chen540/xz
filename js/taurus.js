@@ -1,5 +1,12 @@
 SPA_RESOLVE_INIT = function(transition) {
-    document.getElementById("content").innerHTML = '<section class="bg Taurus-bg">\
+  var JSONP = document.createElement("script");
+  JSONP.type = "text/javascript";
+  JSONP.src = "http://interface.sina.cn/ast/get_mail_fate.d.json?astro=Taurus&callback=Cbk";
+  JSONP.id = "pageid"
+  document.getElementsByTagName("head")[0].appendChild(JSONP);
+ }
+Cbk = function(d){
+  document.getElementById("content").innerHTML = '<section class="bg Taurus-bg">\
         <article class="fate-box Taurus-fate-bg">\
             <section class="content-box">\
                 <h1 class="constellation-box">\
@@ -27,4 +34,4 @@ SPA_RESOLVE_INIT = function(transition) {
             <a class="but fr Taurus-but-02-bg" href="#index">换个星座</a>\
         </section>\
     </section>';
- }
+}
