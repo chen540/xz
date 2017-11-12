@@ -1,4 +1,5 @@
- SPA_RESOLVE_INIT = function(transition) { 
+ SPA_RESOLVE_INIT = function(transition) {
+	 document.getElementsByTagName('head')[0].removeChild(document.getElementById('pageid'))
 	document.getElementById("content").innerHTML = '<section class="container clearfix">\
 		<ul>\
             <li class="fl list">\
