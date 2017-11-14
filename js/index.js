@@ -1,5 +1,5 @@
  SPA_RESOLVE_INIT = function(transition) {
-	 document.getElementsByTagName('head')[0].removeChild(document.getElementById('pageid'))
+	document.getElementsByTagName('head')[0].removeChild(document.getElementById('pageid'));
 	document.getElementById("content").innerHTML = '<section class="container clearfix">\
 		<ul>\
             <li class="fl list">\
@@ -39,7 +39,7 @@
             </li>\
             <li class="fl list">\
                 <a href="#/scorpio">\
-                  <img src="images/mojie-01.png" >\
+                  <img src="images/tianxie-01.png" >\
                </a>\
             </li>\
             <li class="fl list">\
@@ -49,7 +49,7 @@
             </li>\
             <li class="fl list">\
                 <a href="#/capricorn">\
-                  <img src="images/tianxie-01.png" >\
+                  <img src="images/mojie-01.png" >\
                </a>\
             </li>\
             <li class="fl list">\

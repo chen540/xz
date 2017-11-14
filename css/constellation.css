@@ -54,7 +54,7 @@ body,
     border-bottom: 1px solid #fff;
 }
 
-.fate-text:last-child {
+.fate-text:nth-child(3) {
     padding-bottom: 0px;
     border-bottom: none;
 }
@@ -82,6 +82,22 @@ body,
     line-height: 50px;
     color: #fff;
     font-size: 20px;
+}
+.details{
+    width: 70%;
+    height: 50px;
+    margin: 20px auto 0;
+    border-top: none;
+}
+.details-btn{
+    width: 100%;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #eee;
 }
 /* 分享遮罩 */
 #share {
@@ -259,7 +275,7 @@ body,
 }
 
 .Virgo-fate-bg {
-    background: #0e2c54 url('../images/shizi-t-bg.png') repeat-y;
+    background: #0e2c54 ;
 }
 
 .Virgo-logo {
@@ -287,6 +303,7 @@ body,
 .Libra-fate-bg {
 	box-sizing: border-box;
     width:80%;
+    height: 65%;
     background: #000000;
     border: 4px solid #5ac8af;
 }
